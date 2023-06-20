@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
+import Nav from "~/components/home/Nav";
+
 
 export default function Home() {
   return (
@@ -10,32 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container m-auto">
-        <div className="flex justify-between items-center h-24 px-27">
-          <div className="flex items-center gap-x-2">
-            <svg width="41px" height="41px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title/>
-              <g id="Complete">
-              <g id="align-left">
-              <g>
-              <polygon fill="#ffffff" points="12.9 18 4.1 18 4.1 18 12.9 18 12.9 18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <polygon fill="#ffffff" points="20 14 4 14 4 14 20 14 20 14" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <polygon fill="#ffffff" points="12.9 10 4.1 10 4.1 10 12.9 10 12.9 10" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              <polygon fill="#ffffff" points="20 6 4 6 4 6 20 6 20 6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-              </g>
-              </g>
-              </g>
-            </svg>
-            <span className="text-[#FF4F5A] font-bold">Todo Daily</span>
-          </div>
-          <div className="flex gap-x-3">
-            <Link href="/" className="text-[#FF4F5A]">
-              Login
-            </Link>
-            <Link href="/">
-              Signup
-            </Link>
-          </div>
-        </div>
+        <Nav />
       </div>
     </>
   );
