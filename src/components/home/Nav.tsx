@@ -6,7 +6,7 @@ export default function Nav() {
 	return (
 		<div className="flex justify-between items-center h-24 px-27">
           <div className="flex items-center gap-x-2">
-            <Image src={Icon} alt="logo" />
+            <Image src={Icon as string} alt="logo" />
             <span className="text-accent-red font-bold">Todo Daily</span>
           </div>
           <div className="space-x-5">
