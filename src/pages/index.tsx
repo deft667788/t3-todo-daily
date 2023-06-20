@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Feature from "~/components/home/Features";
 import Hero from "~/components/home/Hero";
 import Nav from "~/components/home/Nav";
 
@@ -12,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
-      <div className="h-screen w-full sm:container m-auto overflow-hidden">
+      <div className="h-full w-full sm:container m-auto overflow-hidden">
         <Nav />
         <Hero />
+        <Feature />
       </div>
     </>
   );
